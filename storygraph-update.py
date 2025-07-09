@@ -4,7 +4,7 @@ import os
 
 def get_book_details(book_id, cookie):
     book = Book()
-    result = book.book_info(book_id, cookie=cookie)
+    result = book.book_info(book_id)
     print(result)
     print(type(result))
     return result
