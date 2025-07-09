@@ -16,6 +16,7 @@ def main():
     uname = os.getenv('STORY_USERNAME')
     user = User()
     result = eval(user.currently_reading(uname,cookie=cookie))
+    print(result)
     """
     result looks like this, need to use eval to make sure it's a list of dictionaries:
     [
