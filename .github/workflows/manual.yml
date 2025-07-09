@@ -42,4 +42,4 @@ jobs:
           COOKIE: ${{ secrets.COOKIE }}
           TZ: 'US/Eastern'
         run: |
-          ppythonstorygraph-notion.py
+          python storygraph-update.py
