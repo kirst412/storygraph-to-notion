@@ -2,9 +2,9 @@ from storygraph_api import User, Book
 from dotenv import load_dotenv
 import os
 
-def get_book_details(book_id):
+def get_book_details(book_id, cookie):
     book = Book()
-    result = book.book_info(book_id)
+    result = book.book_info(book_id, cookie=cookie)
     print(result)
     print(type(result))
     return result
@@ -32,7 +32,7 @@ def main():
     details = []
     for book in result:
         print(book)
-        details.append(get_book_details(book['book_id']))
+        details.append(get_book_details(book['book_id'], cookie))
     print(details)
 
 if __name__ == '__main__':
