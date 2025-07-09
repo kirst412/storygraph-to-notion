@@ -1,3 +1,4 @@
 datetime>=5.5
 notion-client==2.2.1
 dotenv>=0.9.9
+storygraph_api>=0.2.1
